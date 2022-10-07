@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7fa;
+  color: #395571;
+}
+.Header_Container {
+  background-color: #ffff;
+}
+.color_395571 {
+  color: #395571;
+}
+.secondColor {
+  color: #acb2b9;
+}
+
+.active_link {
+  color: #123354;
+}
+.min-w-300 {
+  min-width: 300px;
+}
+.space_grotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
+.footerColorBg {
+  background-color: #e9ecf1;
+}
+.HeroContainer {
+  margin-top: 180px;
+}
+.backgroundImage1 {
+  /* background-image: url("https://assets.zorincdn.com/zorin.com/images/home/hero.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  background-color: #eaedf1;
+  min-height: 100vh;
+}
