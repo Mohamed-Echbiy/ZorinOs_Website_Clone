@@ -39,7 +39,7 @@ function Header() {
     </>
   );
   return (
-    <div className="containerHeade mx-auto px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40 fixed top-0 left-0 w-full">
+    <div className="containerHeader mx-auto px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40 z-30 fixed top-0 left-0 w-full">
       <div className="Header_Container flex items-center justify-between mt-8 h-16 px-8 rounded-3xl">
         <div className="logo w-40">
           <Link href="/">

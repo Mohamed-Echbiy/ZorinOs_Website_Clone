@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      <div className="px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40 relative overflow-hidden w-full mx-auto">
+      <div className="relative overflow-hidden w-full mx-auto">
         <Header />
         <Component {...pageProps} />
       </div>

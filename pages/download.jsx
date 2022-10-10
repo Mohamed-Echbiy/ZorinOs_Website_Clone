@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from "../node_modules/next/router";
+import { useRouter } from "next/router";
 
 function download() {
   const { route } = useRouter();

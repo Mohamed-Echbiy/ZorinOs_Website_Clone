@@ -6,7 +6,7 @@ import List from "./List";
 
 function Footer() {
   return (
-    <div className="footer-container footerColorBg px-4 md:px-10 lg:px-20 xl:px-32 2xl:px-52 py-8">
+    <div className="footer-container footerColorBg px-4 md:px-10 lg:px-20 xl:px-28 2xl:px-40 py-14">
       <div className="logo-newletter py-5  lg:flex items-center">
         <div className="logo mb-10 mr-40 w-40">
           <Link href="/">

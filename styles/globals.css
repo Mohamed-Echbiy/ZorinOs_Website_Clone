@@ -30,17 +30,49 @@ body {
   font-family: "Space Grotesk", sans-serif;
 }
 .footerColorBg {
-  background-color: #e9ecf1;
+  background-color: #d8dde6e3;
 }
-.HeroContainer {
-  margin-top: 180px;
+.Hero__Section {
+  margin-top: 200px;
+  background: linear-gradient(
+    0deg,
+    rgba(224, 228, 234, 1) 70%,
+    rgba(243, 244, 246, 1) 100%
+  );
 }
-.backgroundImage1 {
-  /* background-image: url("https://assets.zorincdn.com/zorin.com/images/home/hero.webp");
+.Hero__Section__2 {
+  padding-top: 200px;
+  background-color: #e5ecf79b;
+}
+.Hero__Section__2 .bg-image {
+  background-image: url("../public/Images/layouts-medium.webp");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; */
-
-  background-color: #eaedf1;
-  min-height: 100vh;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.backgroundImage {
+  padding: 50px 0px;
+}
+.Zorin_Info .info {
+  min-width: 300px;
+}
+.loading_indicatore {
+  border: 6px solid #acb2b9;
+  border-bottom: solid transparent 5px;
+  border-right: solid transparent 5px;
+  animation: spin 1s infinite;
+  filter: blur(1px);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.figure_image {
+  min-width: 300px;
+  aspect-ratio: 1/1;
 }
