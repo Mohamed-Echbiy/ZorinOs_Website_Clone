@@ -2,11 +2,11 @@ import React from "react";
 
 function Less_More() {
   return (
-    <div className="flex justify-center flex-wrap min-h-screen">
+    <div className=" justify-center flex-col items-center lg:flex-row min-h-screen flex mt-32">
       <div className="text flex flex-col justify-center px-4">
         <h4 className="space_grotesk font-bold text-4xl sm:text-5xl md:text-6xl secondColor flex items-center mb-2">
           Less
-          <span className=" loading_indicatore ml-2 sm:ml-4 inline-block rounded-full w-7 h-7 sm:w-10 sm:h-10"></span>
+          <span className=" loading_indicator ml-2 sm:ml-4 inline-block rounded-full w-7 h-7 sm:w-10 sm:h-10"></span>
         </h4>
         <h4 className=" italic space_grotesk font-bold text-3xl sm:text-5xl lg:text-6xl mb-6">
           More Speed
