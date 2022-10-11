@@ -57,7 +57,7 @@ body {
 .Zorin_Info .info {
   min-width: 300px;
 }
-.loading_indicatore {
+.loading_indicator {
   border: 6px solid #acb2b9;
   border-bottom: solid transparent 5px;
   border-right: solid transparent 5px;
@@ -75,4 +75,37 @@ body {
 .figure_image {
   min-width: 300px;
   aspect-ratio: 1/1;
+}
+.old_pc_image,
+.OldPc .content {
+  min-width: 300px;
+}
+.bg-gradient-green {
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    linear-gradient(65deg, #1bbe81, #2ae18e);
+}
+.bg-gradient-blue {
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    linear-gradient(65deg, #029be9, #22c5fd);
+}
+.bg-gradient-black {
+  background: linear-gradient(65deg, #1e2529, #354249);
+}
+.card {
+  min-width: 300px;
+}
+.card__text {
+  line-height: 2.8rem;
+  font-size: 2rem;
+}
+.App_bg {
+  background-image: url("https://assets.zorincdn.com/zorin.com/images/home/apps.webp");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
+}
+@keyframes scroll {
+  from {
+    background-position-y: 0px;
+  }
 }
