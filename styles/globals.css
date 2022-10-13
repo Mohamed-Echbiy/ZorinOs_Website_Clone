@@ -45,7 +45,7 @@ body {
   );
 }
 .Hero__Section__2 .bg-image {
-  background-image: url("./Images/layouts-medium.webp");
+  background-image: url("https://assets.zorincdn.com/zorin.com/images/home/layouts-medium.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
