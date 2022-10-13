@@ -45,7 +45,7 @@ body {
   );
 }
 .Hero__Section__2 .bg-image {
-  background-image: url("../public/Images/layouts-medium.webp");
+  background-image: url("./Images/layouts-medium.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
