@@ -7,7 +7,13 @@ import Video from "../src/components/HomePage/Video";
 import Connect_Slider from "../src/components/HomePage/Connect_Slider";
 import Card from "../src/common/Card";
 import { useEffect, useState } from "react";
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ReviewContainer from "../src/common/ReviewContainer";
+import { Autoplay } from "swiper";
+import "swiper/css";
+import QA from "../src/components/HomePage/QA";
+import Link from "next/link";
+import Desclaimer from "../src/components/HomePage/Desclaimer";
 
 export default function Home() {
   const [windows, setWindows] = useState(false);
@@ -93,6 +99,7 @@ export default function Home() {
                   className="mb-5 w-16 mx-auto"
                   src="./Images/steam.png"
                   alt="steam"
+                  loading="lazy"
                 />
                 <p className="font-bold">Steam</p>
               </div>
@@ -101,6 +108,7 @@ export default function Home() {
                   className="mb-5 w-16 mx-auto"
                   src="./Images/lutris.png"
                   alt="lutris"
+                  loading="lazy"
                 />
                 <p className="font-bold">Lutris</p>
               </div>
@@ -117,6 +125,7 @@ export default function Home() {
                   className="mb-5 w-16 mx-auto"
                   src="./Images/itchio.png"
                   alt="itchio"
+                  loading="lazy"
                 />
                 <p className="font-bold">itch.io</p>
               </div>
@@ -125,6 +134,7 @@ export default function Home() {
                   className="mb-5 w-16 mx-auto"
                   src="./Images/gog.png"
                   alt="GOG"
+                  loading="lazy"
                 />
                 <p className="font-bold">GOG</p>
               </div>
@@ -177,27 +187,178 @@ export default function Home() {
       <div className="Remote_section my-32">
         <HeroSection
           title={"Compatible with your"}
-          xtitle={["Compatible with your"]}
+          xtitle={["documents and files."]}
           content={
             "Your documents, music, photos, and videos just work. Zorin OS comes pre-installed with the LibreOffice suite, which lets you view, create, and edit Microsoft Office documents. If you install Zorin OS alongside Windows, you can access the files on your Windows drive partition from within Zorin OS."
           }
         />
-        <div className="remote_image px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40">
+        <div className="remote_image px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40 my-32">
           <img
             src="./Images/compatibility.webp"
             alt="computer with remote working written on it"
           />
         </div>
-        <div className="opinion_section px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40 my-16 py-16">
+      </div>
+      <div className="opinion_section px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40 my-32 ">
+        <div className="opinion_section_container py-16 rounded-3xl">
           <HeroSection
             title="Make your computer better."
-            color="color_395571"
+            color=""
             content="Join the millions who have downloaded Zorin OS. You can get started for free."
             btnText={"Download Zorin OS"}
           />
-          <Swiper></Swiper>
+          {windows && (
+            <div className="opinions_swiper px-2">
+              <Swiper
+                modules={[Autoplay]}
+                grabCursor={true}
+                loop={true}
+                autoplay={{
+                  delay: 2000,
+                }}
+                spaceBetween={50}
+                slidesPerView={1}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 2,
+                  },
+                  1280: {
+                    slidesPerView: 3,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <ReviewContainer
+                    text={
+                      "…I enjoy using Zorin OS. It works flawlessly and I recommend it to everyone that I can."
+                    }
+                    authorName={"Benoit V"}
+                    authorImage={
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoFzeMYR_9DA1mbMbnEbmW_zMFuhOw340Or2YlqKeb28mt6PHyufdP0qYbWA8wT8_3C0&usqp=CAU"
+                    }
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <ReviewContainer
+                    text={
+                      "ZorinOS Just switched and could not be happier so much faster than windows 10 and looks amazing too."
+                    }
+                    authorImage={
+                      "https://assets.zorincdn.com/zorin.com/images/home/testimonials/kingek.jpg"
+                    }
+                    authorName={"Kingek"}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <ReviewContainer
+                    text={
+                      "Changed my full time work OS to ZorinOS and fell in love with it 😊️ 😊️ 😍️ 😍️. To me it looks like the OS of the future."
+                    }
+                    authorImage={
+                      "https://assets.zorincdn.com/zorin.com/images/home/testimonials/gauransh-kumar.jpg"
+                    }
+                    authorName={"Gauransh K."}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <ReviewContainer
+                    text={
+                      "I like Zorin so much I named a weapon in my latest sci-fi book after it. 😊️"
+                    }
+                    authorImage={
+                      "https://assets.zorincdn.com/zorin.com/images/home/testimonials/karl-drinkwater.jpg"
+                    }
+                    authorName={"Kari Drrinkwater"}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <ReviewContainer
+                    text={
+                      " is an extremely beautiful and elegant Operating System. Totally digging it."
+                    }
+                    authorImage={
+                      "https://assets.zorincdn.com/zorin.com/images/home/testimonials/rishi-giri.jpg"
+                    }
+                    authorName={"Rishi Giri"}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <ReviewContainer
+                    text={
+                      "So I've installed ZorinOS today, and all I have to say is... wow. Everything feels so sleek."
+                    }
+                    authorName={"Kieran Messer"}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <ReviewContainer
+                    text={
+                      "Zorin looks really amazing! I am enjoying every click."
+                    }
+                    authorName={"Jan S."}
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          )}
         </div>
       </div>
+      <div className="asked_questions md:flex flex-wrap justify-between px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40">
+        <div className="title_qa w-full">
+          <HeroSection
+            title="Frequently asked questions."
+            color=".color_395571"
+          />
+        </div>
+        <QA
+          question={"Can I try Zorin OS before installing it on my computer?"}
+          answer={
+            "Absolutely! You can run Zorin OS from a USB drive to test-drive it without touching your computer's hard drive. When you're ready to install it, simply double-click on the 'Install Zorin OS' icon on the desktop and follow the step-by-step instructions on the screen."
+          }
+        />
+        <QA
+          question={"Will [insert app] work in Zorin OS?"}
+          answer={
+            "You can install a huge library of apps from the built-in Software store, including many popular apps you know and love. Zorin OS is also natively compatible with Ubuntu & Linux apps (.deb or .AppImage executables), and you can run many Windows apps by simply double-clicking on their .exe or .msi file."
+          }
+        />
+        <QA
+          question={"How much does Zorin OS cost?"}
+          answer={
+            "You can download and use the Core or Lite editions of Zorin OS completely free. For more advanced features, additional apps, and support, you can purchase Zorin OS Pro from here."
+          }
+        />
+        <QA
+          question={"How long does it take to get Zorin OS?"}
+          answer={
+            "The time it takes to download Zorin OS and create a USB install drive will depend on your Internet connection and hardware. Zorin OS usually takes between 10 and 20 minutes to install on your computer, just enough time to have a coffee. You can find out how to install Zorin OS here."
+          }
+        />
+        <QA
+          question={"Will my computer work with Zorin OS?"}
+          answer={
+            "if your computer 15 years old or newer, chance are it should work with Zorin OS. Ypu can check if your computer meets the system requirements. if you're thinking of purchasing Zorin OS Pro and aren't sure if your computer is compatible, you can download Zorin OS Core or Lite for free to test-drive it by running it from a USB flash drive first."
+          }
+        />
+        <QA
+          question={"How long will Zorin OS get software updates for?"}
+          answer={
+            "Zorin OS 16 will receive software updates and security patches until at least April 2025. We normally release major versions every 2 years, so you'll have plenty of time to upgrade to future versions to extend support."
+          }
+        />
+        <div className="w-full">
+          <Link href="https://zorin.com/os/details/">
+            <a
+              className="view__system text-cyan-500 font-bold text-2xl text-center my-10 block"
+              target="_blank"
+            >
+              View technical details about Zorin OS{" "}
+              <span className="arrow">{">"}</span>
+            </a>
+          </Link>
+        </div>
+      </div>
+      <Desclaimer />
     </main>
   );
 }

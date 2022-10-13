@@ -16,9 +16,12 @@ function Old_Pc(props) {
         <p className=" md:text-xl max-w-md mb-5 ">{content}</p>
         {/* isView to determine if the link : view system should appear */}
         {isView && (
-          <Link href="">
-            <a className=" text-cyan-500 font-bold text-xl mb-5 block">
-              View system requirements
+          <Link
+            href="https://help.zorin.com/docs/getting-started/system-requirements/#zorin-os-lite-education-lite-and-pro-lite-editions"
+            target="_blank"
+          >
+            <a className="view__system text-cyan-500 font-bold text-xl mb-5 block">
+              View system requirements <span className="arrow">{">"}</span>
             </a>
           </Link>
         )}
@@ -39,6 +42,7 @@ function Old_Pc(props) {
                   alt="vicenza logo "
                   width={35}
                   height={48}
+                  loading="lazy"
                 />
               </div>
             </div>

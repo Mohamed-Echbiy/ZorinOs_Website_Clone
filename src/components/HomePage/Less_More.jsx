@@ -22,6 +22,7 @@ function Less_More() {
           src="https://assets.zorincdn.com/zorin.com/images/home/speed.png"
           alt="modern laptop"
           className=" absolute top-0 left-0 object-cover "
+          loading="lazy"
         />
       </div>
     </div>

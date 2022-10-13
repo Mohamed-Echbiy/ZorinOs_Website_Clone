@@ -26,6 +26,7 @@ function Connect_Slider() {
           },
         }}
         className="my-swiper mb-32"
+        lazy={true}
       >
         <SwiperSlide className="swiper-slide-zorin">
           <div className="card">
