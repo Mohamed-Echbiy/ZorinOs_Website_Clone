@@ -8,6 +8,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Zorin Os</title>
+        <meta
+          name="description"
+          content="Zorin Os is light weight fast and secure distro based on unbuntu"
+        />
       </Head>
       <div className="relative overflow-hidden w-full mx-auto">
         <Header />
