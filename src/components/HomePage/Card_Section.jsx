@@ -4,7 +4,10 @@ import Card from "../../common/Card";
 function Card_Section() {
   return (
     <div className="my-32 px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40 flex flex-wrap justify-between">
-      {/* choose between bg-gradient-black or bg-gradient-green or bg-gradient-blue variant // default : bg-gradient-blue*/}
+      {/*
+       choose between bg-gradient-black or bg-gradient-purple or bg-gradient-green 
+      or bg-gradient-blue variant // default : bg-gradient-blue
+      */}
       <Card
         variant={"bg-gradient-blue"}
         classname={"lg:w-2/5 lg:mr-10 xl:mr-20"}
@@ -44,7 +47,7 @@ function Card_Section() {
             src="https://assets.zorincdn.com/zorin.com/images/home/privacy.png"
             alt="Lock picture"
             width={128}
-            className="mr-10"
+            className="mr-10 mb-10"
           />
           <div className="card_text_content">
             <span className="block font-bold text-gray-100 mb-10 text-lg md:text-2xl">

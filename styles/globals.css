@@ -7,11 +7,11 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f5f7fa;
+  background-color: #fffafa;
   color: #395571;
 }
 .Header_Container {
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
 }
 .color_395571 {
   color: #395571;
@@ -33,16 +33,17 @@ body {
   background-color: #d8dde6e3;
 }
 .Hero__Section {
-  margin-top: 200px;
-  background: linear-gradient(
-    0deg,
-    rgba(224, 228, 234, 1) 70%,
-    rgba(243, 244, 246, 1) 100%
-  );
+  padding-top: 200px;
+  background: linear-gradient(0deg, #e0e4ea 70%, rgba(243, 244, 246, 1) 100%);
 }
 .Hero__Section__2 {
   padding-top: 200px;
-  background-color: #e5ecf79b;
+  background: rgb(224, 228, 234);
+  background: linear-gradient(
+    180deg,
+    rgba(224, 228, 234, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 .Hero__Section__2 .bg-image {
   background-image: url("../public/Images/layouts-medium.webp");
@@ -91,7 +92,11 @@ body {
 .bg-gradient-black {
   background: linear-gradient(65deg, #1e2529, #354249);
 }
-.card {
+.bg-gradient-purple {
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    linear-gradient(65deg, #8e49e0, #9f74e7);
+}
+.Promotion__card {
   min-width: 300px;
 }
 .card__text {
@@ -103,9 +108,98 @@ body {
   background-repeat: repeat;
   background-position: 0 0;
   background-size: auto 100%;
+  min-height: 100vh;
+  animation: linear 3000s infinite scroll backwards;
 }
 @keyframes scroll {
   from {
     background-position-y: 0px;
   }
+  to {
+    background-position-y: -50000px;
+  }
+}
+.video_container {
+  background-image: url("https://assets.zorincdn.com/zorin.com/images/computer-mockups/desktop-16-10.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 300px;
+}
+.video_container video {
+  padding: 0px 2.5%;
+  transform: translate(-50%, -63%);
+}
+.Connect_swiper .my-swiper .card {
+  padding-top: 2.5rem;
+  margin: auto;
+  border-radius: 16px;
+  background-color: #dee4ee;
+  background-image: linear-gradient(to bottom, #dee4ee, #dee4ee 50%, #c7cdd7);
+  height: 100%;
+  overflow-y: hidden;
+}
+.Connect_swiper .my-swiper .card img.mouse_keyboard {
+  height: 90%;
+}
+.Connect_swiper .slide_text {
+  margin-bottom: 2.5rem;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+  max-height: 460px;
+}
+.Connect_swiper .slide_text span {
+  color: #123354;
+}
+div.Connect_swiper .swiper-button-prev,
+div.Connect_swiper .swiper-button-next {
+  color: white;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.856);
+  padding: 0px 5px;
+  display: none;
+}
+div.Connect_swiper .swiper-button-prev::after,
+div.Connect_swiper .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: bolder;
+}
+div.Connect_swiper .swiper-pagination {
+  bottom: 0px !important;
+}
+div.Connect_swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: 0 0;
+  border: 1px solid #123354;
+  opacity: 0.5;
+}
+div.Connect_swiper .swiper-pagination-bullet-active {
+  background: #123354;
+}
+.my-swiper {
+  padding-bottom: 30px !important;
+}
+div.Connect_swiper .swiper-slide {
+  height: auto !important;
+}
+@media (min-width: 768px) {
+  /* div .swiper-pagination-bullet {
+    display: inline-block;
+  } */
+  div.Connect_swiper .swiper-button-prev,
+  div.Connect_swiper .swiper-button-next {
+    display: flex;
+  }
+}
+.opinion_section {
+  background-color: #dee4ee;
 }
