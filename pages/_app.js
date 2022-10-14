@@ -2,6 +2,7 @@ import Footer from "../src/common/Footer";
 import Header from "../src/common/Header";
 import Head from "next/head";
 import "../styles/globals.css";
+import "../styles/download.css";
 
 function MyApp({ Component, pageProps }) {
   return (

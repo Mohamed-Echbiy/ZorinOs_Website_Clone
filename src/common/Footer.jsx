@@ -19,7 +19,7 @@ function Footer() {
           </Link>
         </div>
         <div className="newsLetter mb-10 flex items-center flex-wrap">
-          <p className="newsletter__text">
+          <p className="newsletter__text mr-3 mt-2">
             Get the latest news about Zorin and tips in your inbox.
           </p>
           <Button text={"Subscribe to our newsletter"} />

@@ -35,7 +35,11 @@ function Header() {
           </a>
         </Link>
       </p>
-      <Button text={"Download"} />
+      <Link href="/download">
+        <a className="pr-2">
+          <Button text={"Download"} />
+        </a>
+      </Link>
     </>
   );
   return (

@@ -1,0 +1,29 @@
+.Download_Page {
+  background-color: #f5f7fa;
+  height: 100%;
+}
+.Download_Page .children {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.Download_Page .children img {
+  width: 65px;
+  margin-right: 0.8rem;
+}
+.Dropdown_container {
+  min-width: 280px;
+}
+.soft-blue-bg {
+  background-color: #e9ecf1;
+}
+.blue-gray-bg {
+  background-color: #e4e9f0;
+}
+.white-blue-bg {
+  background-color: #ffffff;
+}
+
+.dropDown__body.Drop_close {
+  display: none;
+}

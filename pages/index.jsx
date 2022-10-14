@@ -108,7 +108,6 @@ export default function Home() {
                   className="mb-5 w-16 mx-auto"
                   src="./Images/lutris.png"
                   alt="lutris"
-                  loading="lazy"
                 />
                 <p className="font-bold">Lutris</p>
               </div>
@@ -125,7 +124,6 @@ export default function Home() {
                   className="mb-5 w-16 mx-auto"
                   src="./Images/itchio.png"
                   alt="itchio"
-                  loading="lazy"
                 />
                 <p className="font-bold">itch.io</p>
               </div>
@@ -134,7 +132,6 @@ export default function Home() {
                   className="mb-5 w-16 mx-auto"
                   src="./Images/gog.png"
                   alt="GOG"
-                  loading="lazy"
                 />
                 <p className="font-bold">GOG</p>
               </div>
