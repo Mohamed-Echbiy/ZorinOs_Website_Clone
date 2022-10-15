@@ -17,13 +17,13 @@ function HeroSection({
   //? btnText : is the text in the button
   // ----------------
   return (
-    <div className="text-center mb-16 px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40">
+    <div className="HeroSection_Container text-center mb-16 px-4 md:px-10 lg:px-20 xl:px-28  2xl:px-40">
       <h2
         className={` mx-auto lg:max-w-5xl space_grotesk font-extrabold text-3xl sm:text-5xl md:text-6xl xl:text-7xl mb-5 ${color}`}
       >
         {title}
       </h2>
-      {xtitle.length > 1 ? (
+      {xtitle.length >= 2 ? (
         <Swiper
           direction={"vertical"}
           modules={[Autoplay]}
@@ -42,7 +42,7 @@ function HeroSection({
           ))}
         </Swiper>
       ) : (
-        <h4 className="text-center text-3xl md:text-6xl sm:text-5xl xl:text-7xl font-bold mb-10  overflow-hidden ">
+        <h4 className="text-center text-3xl md:text-6xl sm:text-5xl xl:text-7xl font-bold mb-10 ">
           {xtitle[0]}
         </h4>
       )}

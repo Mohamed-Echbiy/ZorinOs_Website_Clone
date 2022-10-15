@@ -1,0 +1,39 @@
+.education_page_container .HeroSection_Container {
+  padding: 0px;
+}
+
+.education_hero h2 {
+  font-size: 2.3rem;
+}
+.education_hero h4 {
+  font-family: "Space Grotesk", sans-serif;
+}
+.education_hero_bg,
+.eduction_callToAction {
+  background-color: #e0e4ea8b;
+}
+@media (min-width: 768px) {
+  .education_swiper {
+    padding: 0px 70px !important;
+  }
+}
+.education_classroom_image img {
+  padding: 6px 12px;
+  aspect-ratio: 1.6/1;
+}
+.education_zorin_grid {
+  background-image: linear-gradient(#f5f7fa, #c5c8d4);
+}
+
+.education_zorin_grid .HeroSection_Container {
+  margin-bottom: 10px;
+}
+.zorin_grid_img {
+  background-image: url("https://assets.zorincdn.com/zorin.com/images/grid/fleet-of-computers.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.eduction_callToAction .HeroSection_Container {
+  margin-bottom: 0px;
+}

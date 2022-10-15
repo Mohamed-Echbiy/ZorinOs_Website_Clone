@@ -20,7 +20,7 @@ body {
 }
 
 .active_link {
-  color: #123354;
+  color: #0f3459;
 }
 .min-w-300 {
   min-width: 300px;
@@ -118,14 +118,16 @@ body {
     background-position-y: -50000px;
   }
 }
-.video_container {
+.video_container,
+.education_classroom_image {
   background-image: url("https://assets.zorincdn.com/zorin.com/images/computer-mockups/desktop-16-10.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   min-width: 300px;
 }
-.video_container video {
+.video_container video,
+.education_classroom_image img {
   padding: 0px 2.5%;
   transform: translate(-50%, -63%);
 }
@@ -154,7 +156,9 @@ body {
   color: #123354;
 }
 div.Connect_swiper .swiper-button-prev,
-div.Connect_swiper .swiper-button-next {
+div.Connect_swiper .swiper-button-next,
+.education_swiper .swiper-button-next,
+.education_swiper .swiper-button-prev {
   color: white;
   font-size: 16px;
   width: 50px;
@@ -165,14 +169,18 @@ div.Connect_swiper .swiper-button-next {
   display: none;
 }
 div.Connect_swiper .swiper-button-prev::after,
-div.Connect_swiper .swiper-button-next::after {
+div.Connect_swiper .swiper-button-next::after,
+.education_swiper .swiper-button-next::after,
+.education_swiper .swiper-button-prev::after {
   font-size: 20px;
   font-weight: bolder;
 }
-div.Connect_swiper .swiper-pagination {
+div.Connect_swiper .swiper-pagination,
+.education_swiper .swiper-pagination {
   bottom: -5px !important;
 }
-div.Connect_swiper .swiper-pagination-bullet {
+div.Connect_swiper .swiper-pagination-bullet,
+.education_swiper .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   display: inline-block;
@@ -181,10 +189,12 @@ div.Connect_swiper .swiper-pagination-bullet {
   border: 1px solid #123354;
   opacity: 0.5;
 }
-div.Connect_swiper .swiper-pagination-bullet-active {
+div.Connect_swiper .swiper-pagination-bullet-active,
+.education_swiper .swiper-pagination-bullet-active {
   background: #123354;
 }
-.my-swiper {
+.my-swiper,
+.education_swiper {
   padding-bottom: 30px !important;
 }
 div.Connect_swiper .swiper-slide {
@@ -195,7 +205,9 @@ div.Connect_swiper .swiper-slide {
     display: inline-block;
   } */
   div.Connect_swiper .swiper-button-prev,
-  div.Connect_swiper .swiper-button-next {
+  div.Connect_swiper .swiper-button-next,
+  .education_swiper .swiper-button-next,
+  .education_swiper .swiper-button-prev {
     display: flex;
   }
 }

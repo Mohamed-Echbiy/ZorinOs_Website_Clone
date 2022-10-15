@@ -54,7 +54,6 @@ function education() {
         <p className="md:text-xl space_grotesk font-bold text-center mb-10 text-gray-500">
           ZORIN GRID - COMMING SOON
         </p>
-
         <HeroSection
           title="Manage all of your school's computers."
           xtitle={["As easily as one."]}

@@ -3,6 +3,7 @@ import Header from "../src/common/Header";
 import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/download.css";
+import "../styles/edcation.css";
 
 function MyApp({ Component, pageProps }) {
   return (
