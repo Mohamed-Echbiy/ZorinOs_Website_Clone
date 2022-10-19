@@ -23,7 +23,13 @@ function pro() {
           title="Zorin OS 16.1 Pro"
           xtitle={["Unleash your computer."]}
         />
-        <video src="./Videos/pro.webm" loop muted autoPlay></video>
+        <video
+          src="./Videos/pro.webm"
+          loop
+          muted
+          autoPlay
+          className="mx-auto"
+        ></video>
         <p className="md:text-xl max-w-2xl mx-auto mt-2 mb-3">
           Zorin OS Pro brings together the best apps and most advanced features,
           so you can unleash the full potential of your computer to do your
