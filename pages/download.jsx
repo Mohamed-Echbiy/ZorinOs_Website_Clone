@@ -97,7 +97,7 @@ function download() {
         </div>
       </div>
       {windows && (
-        <div className="compDropDown flex flex-wrap">
+        <div className="compDropDown flex flex-wrap items-center">
           <CompareEdition />
           <div className="w-full">
             <Link href="https://help.zorin.com/docs/getting-started/check-the-integrity-of-your-copy-of-zorin-os/#correct-sha256-checksums">

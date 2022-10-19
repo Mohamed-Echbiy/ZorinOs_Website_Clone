@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowDown } from "../../Icons/Icons";
+import { ArrowDown, Close } from "../../Icons/Icons";
 
 function DropDown({ title, desc, iscore, islite, ispro, bgColor }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ function DropDown({ title, desc, iscore, islite, ispro, bgColor }) {
           <p className="description text-sm sm:text-base">{desc && desc}</p>
         </div>
         <div className="icon" onClick={() => setIsOpen((pre) => !pre)}>
-          <ArrowDown />
+          {!isOpen ? <ArrowDown /> : <Close />}
         </div>
       </div>
       <div

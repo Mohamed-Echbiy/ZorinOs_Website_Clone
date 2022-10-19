@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ArrowDown } from "../Icons/Icons";
+import { ArrowDown, Close } from "../Icons/Icons";
 import Button from "./Button";
 
 function Header() {
@@ -10,14 +10,20 @@ function Header() {
   // using the route (ex: /download === <a>download</a>) from nextjs router to set the active link
   const links = (
     <>
-      <p className="mr-4 mb-2 mt-2 xs:block md:mb-0">
+      <p
+        className="mr-4 mb-2 mt-2 xs:block md:mb-0"
+        onClick={() => setMenu((pre) => false)}
+      >
         <Link href="/">
           <a className={`unactive_link ${route === "/" && "active_link"}`}>
             Overview
           </a>
         </Link>
       </p>
-      <p className="mr-4 mb-2 mt-2 xs:block md:mb-0">
+      <p
+        className="mr-4 mb-2 mt-2 xs:block md:mb-0"
+        onClick={() => setMenu((pre) => false)}
+      >
         <Link href="/education">
           <a
             className={`unactive_link ${
@@ -28,14 +34,17 @@ function Header() {
           </a>
         </Link>
       </p>
-      <p className="mr-4 mb-2 mt-2 xs:block md:mb-0">
+      <p
+        className="mr-4 mb-2 mt-2 xs:block md:mb-0"
+        onClick={() => setMenu((pre) => false)}
+      >
         <Link href="/pro">
           <a className={`unactive_link ${route === "/pro" && "active_link"}`}>
             Pro
           </a>
         </Link>
       </p>
-      <Link href="/download">
+      <Link href="/download" onClick={() => setMenu((pre) => false)}>
         <a className="pr-2">
           <Button text={"Download"} />
         </a>
@@ -59,7 +68,7 @@ function Header() {
           {links}
         </div>
         <div className="menu md:hidden" onClick={() => setMenu((pre) => !pre)}>
-          <ArrowDown />
+          {openMenu ? <Close /> : <ArrowDown />}
         </div>
       </div>
       <div
