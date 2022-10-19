@@ -95,6 +95,10 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
     linear-gradient(65deg, #8e49e0, #9f74e7);
 }
+.bg-gradient-orange {
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    linear-gradient(65deg, #ff5966, #ff6a32);
+}
 .Promotion__card {
   min-width: 300px;
 }

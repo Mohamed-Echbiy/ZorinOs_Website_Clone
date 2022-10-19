@@ -34,6 +34,10 @@
   background-size: cover;
   background-position: center;
 }
-.eduction_callToAction .HeroSection_Container {
+.callToAction .HeroSection_Container {
   margin-bottom: 0px;
+}
+.pro_desktop_layout {
+  width: 48%;
+  min-width: 250px;
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Link from "../../node_modules/next/link";
-import { useRouter } from "../../node_modules/next/router";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { ArrowDown } from "../Icons/Icons";
 import Button from "./Button";
 

@@ -77,7 +77,7 @@ function education() {
           See more advantages of Zorin OS <span className="arrow">{">"}</span>
         </a>
       </Link>
-      <div className="eduction_callToAction py-14 mx-4 md:mx-10 lg:mx-20 xl:mx-28 2xl:mx-40 mb-10 rounded-3xl">
+      <div className="callToAction py-14 mx-4 md:mx-10 lg:mx-20 xl:mx-28 2xl:mx-40 mb-10 rounded-3xl">
         <HeroSection
           title="Take learning further."
           btnText={"Download Zorin OS Education - free"}

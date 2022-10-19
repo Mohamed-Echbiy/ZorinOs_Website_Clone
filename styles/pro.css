@@ -1,0 +1,62 @@
+.pro_hero_section .HeroSection_Container {
+  padding: 0px;
+}
+
+.pro_hero_section h2 {
+  font-size: 2.3rem;
+}
+.pro_hero_section h4 {
+  font-family: "Space Grotesk", sans-serif;
+}
+.pro_bg {
+  background-color: #f5f7fa;
+}
+.pro_second-bg {
+  background-color: #e9ecf1;
+}
+.pro_productivity .HeroSection_Container {
+  padding: 0px;
+  margin-bottom: 2.5rem;
+}
+.pro_productivity .app-swiper {
+  transition: 0.1s linear !important;
+}
+.pro_productivity .app-swiper div {
+  transition: 0.5s linear;
+  width: fit-content !important;
+  /* margin: 0px 10px; */
+}
+
+.artwork_swiper .swiper-button-next,
+.artwork_swiper .swiper-button-prev {
+  color: white;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.856);
+  padding: 0px 5px;
+  display: none;
+  z-index: 100;
+}
+.artwork_swiper .swiper-button-next::after,
+.artwork_swiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bolder;
+  z-index: 100;
+}
+@media (min-width: 668px) {
+  /* div .swiper-pagination-bullet {
+    display: inline-block;
+  } */
+  .artwork_swiper .swiper-button-prev,
+  .artwork_swiper .swiper-button-next {
+    display: flex;
+  }
+}
+.pro_lite .OldPc h4 span {
+  display: block;
+}
+.pro_lite .OldPc h4 {
+  text-align: start;
+}

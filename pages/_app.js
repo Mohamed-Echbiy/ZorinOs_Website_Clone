@@ -4,6 +4,7 @@ import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/download.css";
 import "../styles/edcation.css";
+import "../styles/pro.css";
 
 function MyApp({ Component, pageProps }) {
   return (
